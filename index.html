@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Арт-ресторація «Ратуша» — Атмосфера. Емоції. Смак</title>
+  <meta name="description" content="Арт-ресторація «Ратуша» у Кам'янці-Подільському. Ресторан, що поєднує велич давніх мурів і сучасну авторську кухню.">
+
+  <!-- Google Fonts: Cormorant Garamond & Urbanist -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <nav class="nav-left">
+        <a href="#hero" class="nav-link active">ГОЛОВНА</a>
+        <a href="https://menu.ps.me/iJKciozf0hg" target="_blank" rel="noopener noreferrer" class="nav-link">МЕНЮ</a>
+      </nav>
+
+      <a href="#hero" class="header-logo-link" aria-label="Головна">
+        <img src="Assets/Logo/Yellow-logo.png" alt="Арт-ресторація Ратуша" class="header-logo-img">
+      </a>
+
+      <nav class="nav-right">
+        <a href="#concept" class="nav-link">ПРО АРТ-РЕСТОРАЦІЮ</a>
+        <a href="#events" class="nav-link">ПОДІЇ</a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Відкрити меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <nav class="mobile-nav-links">
+        <a href="#hero" class="mobile-link">ГОЛОВНА</a>
+        <a href="https://menu.ps.me/iJKciozf0hg" target="_blank" rel="noopener noreferrer" class="mobile-link">МЕНЮ</a>
+        <a href="#concept" class="mobile-link">ПРО АРТ-РЕСТОРАЦІЮ</a>
+        <a href="#events" class="mobile-link">ПОДІЇ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= 1. HERO SECTION ================= -->
+  <section class="hero-pinned-wrapper" id="hero">
+    <div class="hero-stage">
+      
+      <!-- Video Arch Window (Expands on Scroll) -->
+      <div class="hero-video-window" id="hero-video-window">
+        <video class="hero-video-element" id="hero-video" autoplay muted loop playsinline preload="auto">
+          <source src="Assets/video/hero.mp4" type="video/mp4">
+          Ваш браузер не підтримує відтворення відео.
+        </video>
+        <div class="hero-video-overlay"></div>
+        
+        <!-- Heading on Video -->
+        <div class="hero-video-title-wrap">
+          <h1 class="hero-video-title">
+            <span class="line-1">Атмосфера.</span>
+            <span class="line-2">Емоції. Смак.</span>
+          </h1>
+        </div>
+      </div>
+
+      <!-- Hero Grid Overlay (Side Arches & Info) -->
+      <div class="hero-content-container" id="hero-side-content">
+        
+        <!-- Left Arch: Hours -->
+        <div class="hero-arch-card hero-arch-left">
+          <div class="arch-card-inner">
+            <div class="arch-icon-wrap">
+              <svg class="arch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2v6a3 3 0 0 1-3 3v11h-2V11a3 3 0 0 1-3-3V2"></path>
+                <path d="M14 2v4"></path>
+                <path d="M10 2v4"></path>
+                <path d="M6 2v20"></path>
+                <path d="M6 2a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3"></path>
+              </svg>
+            </div>
+            <h3 class="arch-heading">ГОДИНИ РОБОТИ</h3>
+            <div class="arch-info-text">
+              <p><span>Пн — Пт:</span> 10:00 — 23:00</p>
+              <p><span>Сб — Нд:</span> 10:00 — 23:00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Placeholder Spacer for Layout Alignment -->
+        <div class="hero-center-spacer"></div>
+
+        <!-- Right Arch: Contacts & Address -->
+        <div class="hero-arch-card hero-arch-right">
+          <div class="arch-card-inner">
+            <div class="arch-icon-wrap">
+              <svg class="arch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 7.2c0 7.3-8 11.8-8 11.8z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="arch-heading">КОНТАКТИ ТА АДРЕСА</h3>
+            <div class="arch-phone-number">(097) 886-2282</div>
+            <p class="arch-address-text">
+              Серце Кам'янця, центральна площа старого міста, Ратуша.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Scroll Indicator -->
+      <div class="hero-scroll-indicator" id="hero-scroll-indicator">
+        <span class="scroll-label">Гортай</span>
+        <div class="scroll-line-track">
+          <div class="scroll-line-thumb"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 2. CONCEPTION SECTION ================= -->
+  <section class="concept-section" id="concept">
+    <div class="concept-container">
+      
+      <!-- Left Column: Story & Info -->
+      <div class="concept-left-col">
+        <span class="section-badge">КОНЦЕПЦІЯ ЗАКЛАДУ</span>
+        
+        <h2 class="concept-heading" id="concept-heading">
+          <span class="word-group group-1">АРТ</span>
+          <span class="word-group group-2">РЕСТОРАЦІЯ</span>
+          <span class="word-group group-3">РАТУША</span>
+          <span class="word-group group-4">—</span>
+          <span class="word-group group-5">РЕСТОРАН,</span>
+          <span class="word-group group-6">ЩО</span>
+          <span class="word-group group-7">ПОЄДНУЄ</span>
+          <span class="word-group group-8">ВЕЛИЧ</span>
+          <span class="word-group group-9">ДАВНІХ</span>
+          <span class="word-group group-10">МУРІВ</span>
+          <span class="word-group group-11">І</span>
+          <span class="word-group group-12">СУЧАСНУ</span>
+          <span class="word-group group-13">ЕЛЕГАНТНІСТЬ</span>
+        </h2>
+
+        <div class="concept-body-text">
+          <p>
+            Не просто ресторан. Місце, де історія продовжує жити. 
+            Запрошуємо вас поринути в атмосферу старовинного міста, де кожен камінь дихає історією.
+          </p>
+          <p>
+            Наша артресторація розташована в самісінькому серці Кам'янця-Подільського, у будівлі історичної Ратуші. 
+            Ми поєднали велич архітектури з вишуканістю сучасної авторської кухні, щоб створити для вас незабутній гастрономічний досвід.
+          </p>
+        </div>
+
+        <div class="concept-btn-wrap">
+          <a href="#concept" class="btn-invert">БІЛЬШЕ ПРО НАС</a>
+        </div>
+      </div>
+
+      <!-- Right Column: 3 Growing Parallax Columns -->
+      <div class="concept-right-col" id="concept-gallery">
+        
+        <!-- Column 1 (Left - Tower) -->
+        <div class="concept-img-card col-1" data-speed="0.85">
+          <div class="concept-img-frame">
+            <img src="Assets/Images/Conception/1.jpeg" alt="Історична Ратуша Кам'янця-Подільського" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Column 2 (Middle - Tall Cocktail) -->
+        <div class="concept-img-card col-2" data-speed="1.15">
+          <div class="concept-img-frame">
+            <img src="Assets/Images/Conception/2.jpeg" alt="Авторський коктейль арт-ресторації" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Column 3 (Right - Musician in Arch) -->
+        <div class="concept-img-card col-3" data-speed="0.95">
+          <div class="concept-img-frame">
+            <img src="Assets/Images/Conception/3.jpeg" alt="Жива музика під склепінням Ратуші" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 3. BANKET SECTION ================= -->
+  <section class="banket-section" id="banket">
+    <div class="banket-split-wrapper">
+      
+      <!-- Left Side: Olive Slider Box -->
+      <div class="banket-left-box">
+        <div class="banket-left-inner">
+          
+          <div class="banket-header-group">
+            <h2 class="banket-main-title">БЕНКЕТИ</h2>
+            <p class="banket-sub-title">В АРТ-РЕСТОРАЦІЇ «РАТУША»</p>
+          </div>
+
+          <!-- Arched Slider -->
+          <div class="banket-slider-container">
+            
+            <button class="slider-arrow arrow-prev" id="banket-prev" aria-label="Попередній слайд">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+
+            <div class="banket-arch-slider-window">
+              <div class="banket-slides-track" id="banket-slides-track">
+                
+                <div class="banket-slide active" data-index="0">
+                  <img src="Assets/Images/Banket/Slide-1.jpeg" alt="Бенкетний стіл арт-ресторації Ратуша">
+                </div>
+
+                <div class="banket-slide" data-index="1">
+                  <img src="Assets/Images/Banket/Slide-2.jpeg" alt="Атмосфера свята в Ратуші">
+                </div>
+
+                <div class="banket-slide" data-index="2">
+                  <img src="Assets/Images/Banket/Slide-3.jpeg" alt="Сервірування бенкетного столу">
+                </div>
+
+                <div class="banket-slide" data-index="3">
+                  <img src="Assets/Images/Banket/slide-4.jpeg" alt="Кулінарні шедеври для бенкету">
+                </div>
+
+              </div>
+            </div>
+
+            <button class="slider-arrow arrow-next" id="banket-next" aria-label="Наступний слайд">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+
+          </div>
+
+          <!-- Dynamic Caption (Strictly bounded to arch image width) -->
+          <div class="banket-caption-box" id="banket-caption-box">
+            <h4 class="slide-caption-title" id="caption-title">БЕНКЕТ - ЦЕ НЕ ПРОСТО ЇЖА</h4>
+            <p class="slide-caption-desc" id="caption-desc">
+              Це настрій, емоція<br>та момент, що запам’ятовується назавжди.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Side: Atmospheric Darkened Banner -->
+      <div class="banket-right-box">
+        <div class="banket-right-bg">
+          <img src="Assets/Images/Banket/Right-image.jpeg" alt="Замовлення бенкетів в Ратуші" class="banket-bg-img">
+          <div class="banket-right-overlay"></div>
+        </div>
+
+        <div class="banket-right-content">
+          <div class="banket-logo-wrap">
+            <img src="Assets/Images/Footer/Logo-white.png" alt="Ратуша логотип" class="banket-white-logo">
+          </div>
+
+          <div class="banket-order-headings">
+            <span class="banket-order-tag">ЗАМОВЛЕННЯ</span>
+            <h3 class="banket-order-title">БЕНКЕТІВ</h3>
+            <p class="banket-order-subtitle">Свято, продумане до деталей</p>
+          </div>
+
+          <div class="banket-booking-divider">
+            <span class="divider-line"></span>
+            <span class="divider-text">ЗАБРОНЮВАТИ ДАТУ</span>
+            <span class="divider-line"></span>
+          </div>
+
+          <div class="banket-phone-display">
+            +380 (97) 886 22 82
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 4. SELECTED MENU SECTION ================= -->
+  <section class="menu-section" id="menu">
+    <div class="menu-container">
+      
+      <!-- Sub-section 1: Main Dishes (Страви) -->
+      <div class="menu-row menu-dishes-row">
+        
+        <div class="menu-row-sidebar">
+          <span class="menu-category-tag">СМАКИ АРТРЕСТОРАЦІЇ РАТУША</span>
+          <h2 class="menu-row-heading">Новинки та<br>улюблене</h2>
+          <div class="menu-sidebar-illustration-wrap">
+            <img src="Assets/Images/menu/maincourses.png" alt="Ілюстрація страв" class="menu-illustration parallax-float" data-float-speed="0.08">
+          </div>
+        </div>
+
+        <div class="menu-items-list">
+          
+          <!-- Dish 1 -->
+          <article class="menu-item-card" data-full-img="Assets/Images/menu/Dish-1.jpg" data-item-title="КУРЧА ПІРІ-ПІРІ">
+            <div class="menu-item-arch-wrap">
+              <img src="Assets/Images/menu/Dish-1.jpg" alt="Курча Пірі-Пірі" class="menu-item-img">
+              <div class="arch-zoom-overlay">
+                <span class="zoom-icon">⊕</span>
+              </div>
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-name">КУРЧА ПІРІ-ПІРІ</h3>
+              <p class="menu-item-description">
+                Соковите, запашне, з перчинкою характеру й полуум'яним післясмаком.
+              </p>
+            </div>
+          </article>
+
+          <!-- Dish 2 -->
+          <article class="menu-item-card" data-full-img="Assets/Images/menu/dish-2.jpg" data-item-title="ЗАПЕЧЕНИЙ ЛОСОСЬ З ЗЕЛЕНОЮ СПАРЖЕЮ">
+            <div class="menu-item-arch-wrap">
+              <img src="Assets/Images/menu/dish-2.jpg" alt="Запечений лосось з зеленою спаржею" class="menu-item-img">
+              <div class="arch-zoom-overlay">
+                <span class="zoom-icon">⊕</span>
+              </div>
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-name">ЗАПЕЧЕНИЙ ЛОСОСЬ З ЗЕЛЕНОЮ СПАРЖЕЮ</h3>
+              <p class="menu-item-description">
+                Ніжний запечений лосось із зеленою спаржею — вишукана страва з делікатним смаком та легкою свіжістю.
+              </p>
+            </div>
+          </article>
+
+          <!-- Dish 3 -->
+          <article class="menu-item-card" data-full-img="Assets/Images/menu/Dish-3.jpg" data-item-title="БРУСКЕТА З РВАНИМ М'ЯСОМ">
+            <div class="menu-item-arch-wrap">
+              <img src="Assets/Images/menu/Dish-3.jpg" alt="Брускета з рваним м'ясом" class="menu-item-img">
+              <div class="arch-zoom-overlay">
+                <span class="zoom-icon">⊕</span>
+              </div>
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-name">БРУСКЕТА З РВАНИМ М'ЯСОМ</h3>
+              <p class="menu-item-description">
+                Це вже заявка на бенкет. Соковите м'ясо, пікантні спеції та текстура, яка говорить: «Тут не економили на смаку»
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+      <!-- Divider line between food and drinks -->
+      <div class="menu-section-divider"></div>
+
+      <!-- Sub-section 2: Drinks & Cocktails (Напої) -->
+      <div class="menu-row menu-drinks-row">
+        
+        <div class="menu-row-sidebar">
+          <span class="menu-category-tag">КОКТЕЙЛІ</span>
+          <h2 class="menu-row-heading">Варто<br>спробувати</h2>
+          <div class="menu-sidebar-illustration-wrap">
+            <img src="Assets/Images/menu/drinks.png" alt="Ілюстрація напоїв" class="menu-illustration parallax-float" data-float-speed="-0.08">
+          </div>
+        </div>
+
+        <div class="menu-items-list">
+          
+          <!-- Drink 1 -->
+          <article class="menu-item-card" data-full-img="Assets/Images/menu/Drink-1.jpg" data-item-title="Коктейль алкогольний Peachy Sidecar">
+            <div class="menu-item-arch-wrap">
+              <img src="Assets/Images/menu/Drink-1.jpg" alt="Коктейль Peachy Sidecar" class="menu-item-img">
+              <div class="arch-zoom-overlay">
+                <span class="zoom-icon">⊕</span>
+              </div>
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-name">Коктейль алкогольний Peachy Sidecar</h3>
+              <p class="menu-item-description">
+                Персиковий шовковий післясмак з нотками сушених томатів і червоною ікрою
+              </p>
+            </div>
+          </article>
+
+          <!-- Drink 2 -->
+          <article class="menu-item-card" data-full-img="Assets/Images/menu/Drink-2.jpg" data-item-title="Коктейль безалкогольний Соковита Черешня">
+            <div class="menu-item-arch-wrap">
+              <img src="Assets/Images/menu/Drink-2.jpg" alt="Коктейль Соковита Черешня" class="menu-item-img">
+              <div class="arch-zoom-overlay">
+                <span class="zoom-icon">⊕</span>
+              </div>
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-name">Коктейль безалкогольний Соковита Черешня</h3>
+              <p class="menu-item-description">
+                Напій на основі сиропу черешні та лимонного фрешу.
+              </p>
+            </div>
+          </article>
+
+          <!-- Drink 3 -->
+          <article class="menu-item-card" data-full-img="Assets/Images/menu/Drink-3.jpg" data-item-title="Коктейль алкогольний Mango Tai">
+            <div class="menu-item-arch-wrap">
+              <img src="Assets/Images/menu/Drink-3.jpg" alt="Коктейль Mango Tai" class="menu-item-img">
+              <div class="arch-zoom-overlay">
+                <span class="zoom-icon">⊕</span>
+              </div>
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-name">Коктейль алкогольний Mango Tai</h3>
+              <p class="menu-item-description">
+                Міцний алкогольний напій на основі рому, апельсинового лікеру та вишуканого смаку манго.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+      <!-- Action Button -->
+      <div class="menu-bottom-btn-wrap">
+        <a href="https://menu.ps.me/iJKciozf0hg" target="_blank" rel="noopener noreferrer" class="btn-menu-view">
+          ДИВИТИСЬ ВСЕ МЕНЮ
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 5. EVENTS SECTION ================= -->
+  <section class="events-section" id="events">
+    <div class="events-container">
+      
+      <div class="events-header">
+        <div class="events-star-accent">✦</div>
+        <h2 class="events-section-title">Наші події</h2>
+        <div class="events-divider-line"></div>
+      </div>
+
+      <div class="events-cards-grid">
+        
+        <!-- Card 1 -->
+        <article class="event-card">
+          <div class="event-card-top">
+            <div class="event-date-badge">
+              <span class="event-day">17</span>
+              <span class="event-month">ЛИП 2026</span>
+            </div>
+          </div>
+
+          <div class="event-arch-img-frame">
+            <img src="Assets/Images/Events/Event-1.png" alt="Вишукані вечори з живою музикою" class="event-img" loading="lazy">
+          </div>
+
+          <div class="event-card-content">
+            <h3 class="event-title">Вишукані вечори з живою музикою</h3>
+            <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="event-card">
+          <div class="event-card-top">
+            <div class="event-date-badge">
+              <span class="event-day">10</span>
+              <span class="event-month">ЛИП 2026</span>
+            </div>
+          </div>
+
+          <div class="event-arch-img-frame">
+            <img src="Assets/Images/Events/Event-2.png" alt="Музичний вечір у Ратуші" class="event-img" loading="lazy">
+          </div>
+
+          <div class="event-card-content">
+            <h3 class="event-title">Музичний вечір</h3>
+            <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="event-card">
+          <div class="event-card-top">
+            <div class="event-date-badge">
+              <span class="event-day">5</span>
+              <span class="event-month">ЛИП 2026</span>
+            </div>
+          </div>
+
+          <div class="event-arch-img-frame">
+            <img src="Assets/Images/Events/Event-3.png" alt="Пінна вечірка" class="event-img" loading="lazy">
+          </div>
+
+          <div class="event-card-content">
+            <h3 class="event-title">Пінна вечірка</h3>
+            <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 6. FOOTER ================= -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-container">
+      
+      <div class="footer-main-row">
+        
+        <!-- Left Arched Image with Scroll Trigger Growth -->
+        <div class="footer-arch-col" id="footer-arch-col">
+          <div class="footer-arch-frame" id="footer-arch-frame">
+            <img src="Assets/Images/Footer/Left-image.png" alt="Арт-ресторація Ратуша інтер'єр" class="footer-arch-img" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Info Columns -->
+        <div class="footer-info-grid">
+          
+          <!-- Column 1: Address & Phone -->
+          <div class="footer-col footer-col-address">
+            <div class="footer-block">
+              <h4 class="footer-heading">АДРЕСА</h4>
+              <p class="footer-text">
+                площа Польський ринок, 1,<br>
+                Кам'янець-Подільський 32300<br>
+                Україна
+              </p>
+            </div>
+
+            <div class="footer-block">
+              <h4 class="footer-heading">ТЕЛЕФОН</h4>
+              <div class="footer-phone-display">+380 (97) 886 22 82</div>
+            </div>
+          </div>
+
+          <!-- Column 2: Hours & Navigation -->
+          <div class="footer-col footer-col-hours">
+            <div class="footer-block">
+              <h4 class="footer-heading">ГОДИНИ РОБОТИ</h4>
+              <p class="footer-text">ПН-НД: 9:00 — 23:00</p>
+            </div>
+
+            <div class="footer-block">
+              <h4 class="footer-heading">НАВІГАЦІЯ</h4>
+              <ul class="footer-nav-list">
+                <li><a href="#concept">Про нас</a></li>
+                <li><a href="https://menu.ps.me/iJKciozf0hg" target="_blank" rel="noopener noreferrer">Меню</a></li>
+                <li><a href="#events">Події</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 3: Social Media -->
+          <div class="footer-col footer-col-social">
+            <div class="footer-block">
+              <h4 class="footer-heading">СОЦІАЛЬНІ МЕРЕЖІ</h4>
+              <ul class="footer-social-list">
+                <li>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 4: Round Badge Logo -->
+          <div class="footer-col footer-col-badge">
+            <div class="footer-round-badge">
+              <img src="Assets/Images/Footer/Logo-white.png" alt="Ратуша білий логотип" class="footer-badge-logo">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">© 2026 ArtRestoratsiia Ratusha. Усі права захищені.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= LIGHTBOX POPUP MODAL ================= -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-dialog">
+      <button class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Закрити">✕</button>
+      <div class="lightbox-image-container">
+        <img src="" alt="" class="lightbox-active-img" id="lightbox-img">
+      </div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- ================= SCRIPTS ================= -->
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
