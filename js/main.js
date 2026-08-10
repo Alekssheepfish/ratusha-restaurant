@@ -359,6 +359,37 @@ document.addEventListener('DOMContentLoaded', () => {
     if (sliderContainer) {
       sliderContainer.addEventListener('mouseenter', stopAutoplay);
       sliderContainer.addEventListener('mouseleave', startAutoplay);
+
+      // Touch swipe support for mobile
+      let touchStartX = 0;
+      let touchStartY = 0;
+
+      sliderContainer.addEventListener('touchstart', (e) => {
+        if (e.touches && e.touches.length === 1) {
+          touchStartX = e.touches[0].clientX;
+          touchStartY = e.touches[0].clientY;
+          stopAutoplay();
+        }
+      }, { passive: true });
+
+      sliderContainer.addEventListener('touchend', (e) => {
+        if (e.changedTouches && e.changedTouches.length === 1) {
+          const touchEndX = e.changedTouches[0].clientX;
+          const touchEndY = e.changedTouches[0].clientY;
+          const diffX = touchStartX - touchEndX;
+          const diffY = touchStartY - touchEndY;
+
+          // If horizontal swipe is dominant and exceeds threshold
+          if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 35) {
+            if (diffX > 0) {
+              updateBanketSlide(currentSlide + 1); // Swiped left -> Next slide
+            } else {
+              updateBanketSlide(currentSlide - 1); // Swiped right -> Prev slide
+            }
+          }
+          startAutoplay();
+        }
+      }, { passive: true });
     }
 
     startAutoplay();
