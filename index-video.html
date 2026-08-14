@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Арт-ресторація «Ратуша» — Атмосфера. Емоції. Смак</title>
+  <title>Арт-ресторація «Ратуша» — Не просто ресторан. Місце, де історія продовжує жити</title>
   <meta name="description" content="Арт-ресторація «Ратуша» у Кам'янці-Подільському. Ресторан, що поєднує велич давніх мурів і сучасну авторську кухню.">
 
   <!-- Google Fonts: Cormorant Garamond & Urbanist -->
@@ -16,30 +16,30 @@
 </head>
 <body>
 
-  <!-- ================= HEADER ================= -->
+  <!-- ================= HEADER (LOGO LEFT, NAV RIGHT) ================= -->
   <header class="site-header" id="site-header">
-    <div class="header-container">
-      <nav class="nav-left">
+    <div class="header-container header-container-wide">
+      
+      <!-- Left: Logo -->
+      <a href="index-video.html" class="header-logo-link" aria-label="Головна">
+        <img src="Assets/Logo/Yellow-logo.png" alt="Арт-ресторація Ратуша" class="header-logo-img">
+      </a>
+
+      <!-- Right: Navigation Menu -->
+      <nav class="nav-right-all">
         <div class="nav-dropdown">
-          <a href="index.html" class="nav-link dropdown-toggle active">
+          <a href="index-video.html" class="nav-link dropdown-toggle active">
             ГОЛОВНА
             <svg class="dropdown-arrow" viewBox="0 0 10 6" width="9" height="6" fill="currentColor">
               <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
             </svg>
           </a>
           <div class="dropdown-menu">
-            <a href="index.html" class="dropdown-item active-item">Головна з аркою</a>
-            <a href="index-video.html" class="dropdown-item">Головна відео</a>
+            <a href="index.html" class="dropdown-item">Головна з аркою</a>
+            <a href="index-video.html" class="dropdown-item active-item">Головна відео</a>
           </div>
         </div>
         <a href="https://menu.ps.me/iJKciozf0hg" target="_blank" rel="noopener noreferrer" class="nav-link">МЕНЮ</a>
-      </nav>
-
-      <a href="#hero" class="header-logo-link" aria-label="Головна">
-        <img src="Assets/Logo/Yellow-logo.png" alt="Арт-ресторація Ратуша" class="header-logo-img">
-      </a>
-
-      <nav class="nav-right">
         <a href="#concept" class="nav-link">ПРО АРТ-РЕСТОРАЦІЮ</a>
         <a href="#events" class="nav-link">ПОДІЇ</a>
       </nav>
@@ -56,9 +56,9 @@
     <div class="mobile-nav-drawer" id="mobile-nav-drawer">
       <nav class="mobile-nav-links">
         <div class="mobile-sub-group">
-          <a href="index.html" class="mobile-link">ГОЛОВНА</a>
-          <a href="index.html" class="mobile-sublink" style="color: var(--color-accent);">• Головна з аркою</a>
-          <a href="index-video.html" class="mobile-sublink">• Головна відео</a>
+          <a href="index-video.html" class="mobile-link">ГОЛОВНА</a>
+          <a href="index.html" class="mobile-sublink">• Головна з аркою</a>
+          <a href="index-video.html" class="mobile-sublink" style="color: var(--color-accent);">• Головна відео</a>
         </div>
         <a href="https://menu.ps.me/iJKciozf0hg" target="_blank" rel="noopener noreferrer" class="mobile-link">МЕНЮ</a>
         <a href="#concept" class="mobile-link">ПРО АРТ-РЕСТОРАЦІЮ</a>
@@ -67,81 +67,42 @@
     </div>
   </header>
 
-  <!-- ================= 1. HERO SECTION ================= -->
-  <section class="hero-pinned-wrapper" id="hero">
-    <div class="hero-stage">
-      
-      <!-- Video Arch Window (Expands on Scroll) -->
-      <div class="hero-video-window" id="hero-video-window">
-        <video class="hero-video-element" id="hero-video" autoplay muted loop playsinline preload="auto">
-          <source src="Assets/video/hero.mp4" type="video/mp4">
-          Ваш браузер не підтримує відтворення відео.
-        </video>
-        <div class="hero-video-overlay"></div>
-        
-        <!-- Heading on Video -->
-        <div class="hero-video-title-wrap">
-          <h1 class="hero-video-title">
-            <span class="line-1">Атмосфера.</span>
-            <span class="line-2">Емоції. Смак.</span>
-          </h1>
-        </div>
-      </div>
-
-      <!-- Hero Grid Overlay (Side Arches & Info) -->
-      <div class="hero-content-container" id="hero-side-content">
-        
-        <!-- Left Arch: Hours -->
-        <div class="hero-arch-card hero-arch-left">
-          <div class="arch-card-inner">
-            <div class="arch-icon-wrap">
-              <svg class="arch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 2v6a3 3 0 0 1-3 3v11h-2V11a3 3 0 0 1-3-3V2"></path>
-                <path d="M14 2v4"></path>
-                <path d="M10 2v4"></path>
-                <path d="M6 2v20"></path>
-                <path d="M6 2a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3"></path>
-              </svg>
-            </div>
-            <h3 class="arch-heading">ГОДИНИ РОБОТИ</h3>
-            <div class="arch-info-text">
-              <p><span>Пн — Пт:</span> 10:00 — 23:00</p>
-              <p><span>Сб — Нд:</span> 10:00 — 23:00</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Center Placeholder Spacer for Layout Alignment -->
-        <div class="hero-center-spacer"></div>
-
-        <!-- Right Arch: Contacts & Address -->
-        <div class="hero-arch-card hero-arch-right">
-          <div class="arch-card-inner">
-            <div class="arch-icon-wrap">
-              <svg class="arch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 21s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 7.2c0 7.3-8 11.8-8 11.8z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-            </div>
-            <h3 class="arch-heading">КОНТАКТИ ТА АДРЕСА</h3>
-            <div class="arch-phone-number">(097) 886-2282</div>
-            <p class="arch-address-text">
-              Серце Кам'янця, центральна площа старого міста, Ратуша.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Bottom Scroll Indicator -->
-      <div class="hero-scroll-indicator" id="hero-scroll-indicator">
-        <span class="scroll-label">Гортай</span>
-        <div class="scroll-line-track">
-          <div class="scroll-line-thumb"></div>
-        </div>
-      </div>
-
+  <!-- ================= 1. FULLSCREEN VIDEO HERO SECTION ================= -->
+  <section class="hero-fullscreen-section" id="hero">
+    
+    <!-- Background Video -->
+    <div class="hero-fs-video-wrap">
+      <video class="hero-fs-video" autoplay muted loop playsinline preload="auto">
+        <source src="Assets/video/hero.mp4" type="video/mp4">
+        Ваш браузер не підтримує відтворення відео.
+      </video>
+      <div class="hero-fs-overlay"></div>
     </div>
+
+    <!-- Left Aligned Typography & Actions -->
+    <div class="hero-fs-container">
+      <div class="hero-fs-content">
+        <h1 class="hero-fs-title">
+          Не просто ресторан.<br>
+          Місце, де історія<br>
+          продовжує жити.
+        </h1>
+        <p class="hero-fs-subtitle">
+          У самому серці Старого міста, у будівлі легендарної Ратуші — там, де кожен камінь пам'ятає століття подій, людей і традицій.
+        </p>
+        <div class="hero-fs-actions">
+          <a href="#banket" class="btn-hero-primary">ЗАБРОНЮВАТИ СТОЛИК</a>
+          <a href="https://menu.ps.me/iJKciozf0hg" target="_blank" rel="noopener noreferrer" class="btn-hero-secondary">ПЕРЕГЛЯНУТИ МЕНЮ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Scroll Indicator -->
+    <div class="hero-fs-scroll">
+      <span class="fs-scroll-text">ГОРТАЙТЕ</span>
+      <div class="fs-scroll-line"></div>
+    </div>
+
   </section>
 
   <!-- ================= 2. CONCEPTION SECTION ================= -->
@@ -586,7 +547,7 @@
               <h4 class="footer-heading">СОЦІАЛЬНІ МЕРЕЖІ</h4>
               <ul class="footer-social-list">
                 <li>
-                  <a href="https://www.instagram.com/ratusha_kp_artrestoratsiia/" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
                 </li>
               </ul>
             </div>

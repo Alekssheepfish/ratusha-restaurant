@@ -193,6 +193,27 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ------------------------------------------------------------------------
+  // 3.1 FULLSCREEN HERO ENTRANCE (VARIANT 2)
+  // ------------------------------------------------------------------------
+  const fsContent = document.querySelector('.hero-fs-content');
+  if (fsContent && typeof gsap !== 'undefined') {
+    gsap.fromTo(fsContent.children,
+      {
+        opacity: 0,
+        y: 35,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.2,
+        stagger: 0.18,
+        ease: 'power3.out',
+        delay: 0.15
+      }
+    );
+  }
+
+  // ------------------------------------------------------------------------
   // 4. CONCEPTION SECTION ANIMATIONS
   // ------------------------------------------------------------------------
   const conceptSection = document.getElementById('concept');
