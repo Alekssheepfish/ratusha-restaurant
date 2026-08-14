@@ -1839,12 +1839,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 900px) {
-  .nav-left, .nav-right {
+  .nav-left, .nav-right, .nav-right-all {
     display: none;
   }
 
   .mobile-menu-btn {
     display: flex;
+  }
+
+  /* Fullscreen Hero Mobile */
+  .hero-fullscreen-section {
+    padding: 120px 24px 70px;
+    min-height: 100svh;
+  }
+
+  .hero-fs-title {
+    font-size: clamp(32px, 7vw, 48px);
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+
+  .hero-fs-subtitle {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .hero-fs-actions {
+    width: 100%;
+  }
+
+  .btn-hero-primary {
+    padding: 14px 28px;
+    font-size: 12px;
   }
 
   .hero-content-container {
