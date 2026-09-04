@@ -514,15 +514,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let clickCount = 0;
     const additionalBatches = [
       [
-        { day: '17', month: 'ТРА 2026', title: 'Вишукані вечори з живою музикою', img: 'Assets/Images/Events/Event-1.png' },
-        { day: '10', month: 'ТРА 2026', title: 'Музичний вечір', img: 'Assets/Images/Events/Event-2.png' },
-        { day: '03', month: 'ТРА 2026', title: 'Пінна вечірка', img: 'Assets/Images/Events/Event-3.png' },
-        { day: '26', month: 'КВІ 2026', title: 'Вишукані вечори з живою музикою', img: 'Assets/Images/Events/Event-1.png' },
-        { day: '19', month: 'КВІ 2026', title: 'Музичний вечір', img: 'Assets/Images/Events/Event-2.png' },
-        { day: '12', month: 'КВІ 2026', title: 'Пінна вечірка', img: 'Assets/Images/Events/Event-3.png' },
-        { day: '05', month: 'КВІ 2026', title: 'Вишукані вечори з живою музикою', img: 'Assets/Images/Events/Event-1.png' },
-        { day: '29', month: 'БЕР 2026', title: 'Музичний вечір', img: 'Assets/Images/Events/Event-2.png' },
-        { day: '22', month: 'БЕР 2026', title: 'Пінна вечірка', img: 'Assets/Images/Events/Event-3.png' }
+        { day: '17', month: 'ТРА 2026', title: 'Вишукані вечори з живою музикою', desc: 'Жива музика, що створює настрій кожного вечора', img: 'Assets/Images/Events/Event-1.png' },
+        { day: '10', month: 'ТРА 2026', title: 'Музичний вечір', desc: 'Музичний вечір в АртРесторації Ратуша - 10 липня | 18:00', img: 'Assets/Images/Events/Event-2.png' },
+        { day: '03', month: 'ТРА 2026', title: 'Пінна вечірка', desc: 'ПІННА ВЕЧІРКА в АртРесторації Ратуша — море піни, веселощів та яскравих емоцій для дітей!', img: 'Assets/Images/Events/Event-3.png' },
+        { day: '26', month: 'КВІ 2026', title: 'Вишукані вечори з живою музикою', desc: 'Жива музика, що створює настрій кожного вечора', img: 'Assets/Images/Events/Event-1.png' },
+        { day: '19', month: 'КВІ 2026', title: 'Музичний вечір', desc: 'Музичний вечір в АртРесторації Ратуша - 10 липня | 18:00', img: 'Assets/Images/Events/Event-2.png' },
+        { day: '12', month: 'КВІ 2026', title: 'Пінна вечірка', desc: 'ПІННА ВЕЧІРКА в АртРесторації Ратуша — море піни, веселощів та яскравих емоцій для дітей!', img: 'Assets/Images/Events/Event-3.png' },
+        { day: '05', month: 'КВІ 2026', title: 'Вишукані вечори з живою музикою', desc: 'Жива музика, що створює настрій кожного вечора', img: 'Assets/Images/Events/Event-1.png' },
+        { day: '29', month: 'БЕР 2026', title: 'Музичний вечір', desc: 'Музичний вечір в АртРесторації Ратуша - 10 липня | 18:00', img: 'Assets/Images/Events/Event-2.png' },
+        { day: '22', month: 'БЕР 2026', title: 'Пінна вечірка', desc: 'ПІННА ВЕЧІРКА в АртРесторації Ратуша — море піни, веселощів та яскравих емоцій для дітей!', img: 'Assets/Images/Events/Event-3.png' }
       ]
     ];
 
@@ -546,6 +546,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="event-card-content">
               <h3 class="event-title">${item.title}</h3>
+              <p class="event-description">${item.desc}</p>
               <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
             </div>
           `;
