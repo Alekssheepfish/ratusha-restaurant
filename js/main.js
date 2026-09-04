@@ -505,6 +505,72 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ------------------------------------------------------------------------
+  // 7.1 EVENTS PAGE "LOAD MORE" FUNCTIONALITY
+  // ------------------------------------------------------------------------
+  const loadMoreBtn = document.getElementById('load-more-events-btn');
+  const eventsGrid = document.getElementById('events-grid');
+
+  if (loadMoreBtn && eventsGrid) {
+    let clickCount = 0;
+    const additionalBatches = [
+      [
+        { day: '17', month: 'ТРА 2026', title: 'Вишукані вечори з живою музикою', img: 'Assets/Images/Events/Event-1.png' },
+        { day: '10', month: 'ТРА 2026', title: 'Музичний вечір', img: 'Assets/Images/Events/Event-2.png' },
+        { day: '03', month: 'ТРА 2026', title: 'Пінна вечірка', img: 'Assets/Images/Events/Event-3.png' },
+        { day: '26', month: 'КВІ 2026', title: 'Вишукані вечори з живою музикою', img: 'Assets/Images/Events/Event-1.png' },
+        { day: '19', month: 'КВІ 2026', title: 'Музичний вечір', img: 'Assets/Images/Events/Event-2.png' },
+        { day: '12', month: 'КВІ 2026', title: 'Пінна вечірка', img: 'Assets/Images/Events/Event-3.png' },
+        { day: '05', month: 'КВІ 2026', title: 'Вишукані вечори з живою музикою', img: 'Assets/Images/Events/Event-1.png' },
+        { day: '29', month: 'БЕР 2026', title: 'Музичний вечір', img: 'Assets/Images/Events/Event-2.png' },
+        { day: '22', month: 'БЕР 2026', title: 'Пінна вечірка', img: 'Assets/Images/Events/Event-3.png' }
+      ]
+    ];
+
+    loadMoreBtn.addEventListener('click', () => {
+      if (clickCount < additionalBatches.length) {
+        const batch = additionalBatches[clickCount];
+        const newCards = [];
+
+        batch.forEach(item => {
+          const card = document.createElement('article');
+          card.className = 'event-card';
+          card.innerHTML = `
+            <div class="event-card-top">
+              <div class="event-date-badge">
+                <span class="event-day">${item.day}</span>
+                <span class="event-month">${item.month}</span>
+              </div>
+            </div>
+            <div class="event-arch-img-frame">
+              <img src="${item.img}" alt="${item.title}" class="event-img" loading="lazy">
+            </div>
+            <div class="event-card-content">
+              <h3 class="event-title">${item.title}</h3>
+              <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
+            </div>
+          `;
+          eventsGrid.appendChild(card);
+          newCards.push(card);
+        });
+
+        if (typeof gsap !== 'undefined') {
+          gsap.fromTo(newCards,
+            { opacity: 0, y: 40 },
+            { opacity: 1, y: 0, duration: 0.8, stagger: 0.1, ease: 'power3.out' }
+          );
+        }
+
+        clickCount++;
+        if (clickCount >= additionalBatches.length) {
+          loadMoreBtn.textContent = 'ПОДІЇ ЗАВАНТАЖЕНО';
+          loadMoreBtn.style.opacity = '0.6';
+          loadMoreBtn.style.cursor = 'default';
+        }
+      }
+    });
+  }
+
+  // ------------------------------------------------------------------------
   // 8. FOOTER SECTION (ARCH IMAGE GROWTH ANIMATION)
   // ------------------------------------------------------------------------
   const footerArchFrame = document.getElementById('footer-arch-frame');

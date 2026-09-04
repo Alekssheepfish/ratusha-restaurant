@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наші події — Арт-ресторація «Ратуша»</title>
+  <meta name="description" content="Афіша подій, музичних вечорів та святок в арт-ресторації «Ратуша» у Кам'янці-Подільському.">
+
+  <!-- Google Fonts: Cormorant Garamond & Urbanist -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <nav class="nav-left">
+        <div class="nav-dropdown">
+          <a href="index.html" class="nav-link dropdown-toggle">
+            ГОЛОВНА
+            <svg class="dropdown-arrow" viewBox="0 0 10 6" width="9" height="6" fill="currentColor">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-item">Головна з аркою</a>
+            <a href="index-video.html" class="dropdown-item">Головна відео</a>
+          </div>
+        </div>
+        <a href="https://menu.ps.me/iJKciozf0hg" target="_blank" rel="noopener noreferrer" class="nav-link">МЕНЮ</a>
+      </nav>
+
+      <a href="index.html" class="header-logo-link" aria-label="Головна">
+        <img src="Assets/Logo/Yellow-logo.png" alt="Арт-ресторація Ратуша" class="header-logo-img">
+      </a>
+
+      <nav class="nav-right">
+        <a href="index.html#concept" class="nav-link">ПРО АРТ-РЕСТОРАЦІЮ</a>
+        <a href="events.html" class="nav-link active">ПОДІЇ</a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Відкрити меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <nav class="mobile-nav-links">
+        <div class="mobile-sub-group">
+          <span class="mobile-link">ГОЛОВНА</span>
+          <a href="index.html" class="mobile-sublink">• Головна з аркою</a>
+          <a href="index-video.html" class="mobile-sublink">• Головна відео</a>
+        </div>
+        <a href="https://menu.ps.me/iJKciozf0hg" target="_blank" rel="noopener noreferrer" class="mobile-link">МЕНЮ</a>
+        <a href="index.html#concept" class="mobile-link">ПРО АРТ-РЕСТОРАЦІЮ</a>
+        <a href="events.html" class="mobile-link" style="color: var(--color-accent);">ПОДІЇ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO EVENTS BANNER ================= -->
+  <section class="events-hero-section">
+    <img src="Assets/Images/Events/Hero-events.png" alt="Наші події - Арт-ресторація Ратуша" class="events-hero-bg">
+    <div class="events-hero-overlay"></div>
+    <div class="events-hero-content">
+      <h1 class="events-hero-title">Наші Події</h1>
+      <p class="events-hero-subtitle">Жива музика, святкові вечори та незабутня атмосфера старовинного Кам'янця</p>
+    </div>
+  </section>
+
+  <!-- ================= EVENTS GRID SECTION ================= -->
+  <section class="events-page-section">
+    <div class="events-page-container">
+      
+      <!-- 3 Rows x 3 Columns = 9 Event Cards -->
+      <div class="events-cards-grid events-grid-3x3" id="events-grid">
+        
+        <!-- Row 1 -->
+        <article class="event-card">
+          <div class="event-card-top">
+            <div class="event-date-badge">
+              <span class="event-day">17</span>
+              <span class="event-month">ЛИП 2026</span>
+            </div>
+          </div>
+          <div class="event-arch-img-frame">
+            <img src="Assets/Images/Events/Event-1.png" alt="Вишукані вечори з живою музикою" class="event-img" loading="lazy">
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-title">Вишукані вечори з живою музикою</h3>
+            <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-card-top">
+            <div class="event-date-badge">
+              <span class="event-day">10</span>
+              <span class="event-month">ЛИП 2026</span>
+            </div>
+          </div>
+          <div class="event-arch-img-frame">
+            <img src="Assets/Images/Events/Event-2.png" alt="Музичний вечір у Ратуші" class="event-img" loading="lazy">
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-title">Музичний вечір</h3>
+            <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-card-top">
+            <div class="event-date-badge">
+              <span class="event-day">5</span>
+              <span class="event-month">ЛИП 2026</span>
+            </div>
+          </div>
+          <div class="event-arch-img-frame">
+            <img src="Assets/Images/Events/Event-3.png" alt="Пінна вечірка" class="event-img" loading="lazy">
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-title">Пінна вечірка</h3>
+            <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
+          </div>
+        </article>
+
+        <!-- Row 2 -->
+        <article class="event-card">
+          <div class="event-card-top">
+            <div class="event-date-badge">
+              <span class="event-day">28</span>
+              <span class="event-month">ЧЕР 2026</span>
+            </div>
+          </div>
+          <div class="event-arch-img-frame">
+            <img src="Assets/Images/Events/Event-1.png" alt="Вишукані вечори з живою музикою" class="event-img" loading="lazy">
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-title">Вишукані вечори з живою музикою</h3>
+            <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-card-top">
+            <div class="event-date-badge">
+              <span class="event-day">21</span>
+              <span class="event-month">ЧЕР 2026</span>
+            </div>
+          </div>
+          <div class="event-arch-img-frame">
+            <img src="Assets/Images/Events/Event-2.png" alt="Музичний вечір у Ратуші" class="event-img" loading="lazy">
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-title">Музичний вечір</h3>
+            <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-card-top">
+            <div class="event-date-badge">
+              <span class="event-day">14</span>
+              <span class="event-month">ЧЕР 2026</span>
+            </div>
+          </div>
+          <div class="event-arch-img-frame">
+            <img src="Assets/Images/Events/Event-3.png" alt="Пінна вечірка" class="event-img" loading="lazy">
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-title">Пінна вечірка</h3>
+            <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
+          </div>
+        </article>
+
+        <!-- Row 3 -->
+        <article class="event-card">
+          <div class="event-card-top">
+            <div class="event-date-badge">
+              <span class="event-day">07</span>
+              <span class="event-month">ЧЕР 2026</span>
+            </div>
+          </div>
+          <div class="event-arch-img-frame">
+            <img src="Assets/Images/Events/Event-1.png" alt="Вишукані вечори з живою музикою" class="event-img" loading="lazy">
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-title">Вишукані вечори з живою музикою</h3>
+            <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-card-top">
+            <div class="event-date-badge">
+              <span class="event-day">31</span>
+              <span class="event-month">ТРА 2026</span>
+            </div>
+          </div>
+          <div class="event-arch-img-frame">
+            <img src="Assets/Images/Events/Event-2.png" alt="Музичний вечір у Ратуші" class="event-img" loading="lazy">
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-title">Музичний вечір</h3>
+            <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-card-top">
+            <div class="event-date-badge">
+              <span class="event-day">24</span>
+              <span class="event-month">ТРА 2026</span>
+            </div>
+          </div>
+          <div class="event-arch-img-frame">
+            <img src="Assets/Images/Events/Event-3.png" alt="Пінна вечірка" class="event-img" loading="lazy">
+          </div>
+          <div class="event-card-content">
+            <h3 class="event-title">Пінна вечірка</h3>
+            <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Load More Button -->
+      <div class="btn-load-more-wrap">
+        <button class="btn-load-more" id="load-more-events-btn">
+          ПОКАЗАТИ БІЛЬШЕ
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 6. FOOTER ================= -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-container">
+      
+      <div class="footer-main-row">
+        
+        <!-- Left Arched Image with Scroll Trigger Growth -->
+        <div class="footer-arch-col" id="footer-arch-col">
+          <div class="footer-arch-frame" id="footer-arch-frame">
+            <img src="Assets/Images/Footer/Left-image.png" alt="Арт-ресторація Ратуша інтер'єр" class="footer-arch-img" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Info Columns -->
+        <div class="footer-info-grid">
+          
+          <!-- Column 1: Address & Phone -->
+          <div class="footer-col footer-col-address">
+            <div class="footer-block">
+              <h4 class="footer-heading">АДРЕСА</h4>
+              <p class="footer-text">
+                площа Польський ринок, 1,<br>
+                Кам'янець-Подільський 32300<br>
+                Україна
+              </p>
+            </div>
+
+            <div class="footer-block">
+              <h4 class="footer-heading">ТЕЛЕФОН</h4>
+              <div class="footer-phone-display">+380 (97) 886 22 82</div>
+            </div>
+          </div>
+
+          <!-- Column 2: Hours & Navigation -->
+          <div class="footer-col footer-col-hours">
+            <div class="footer-block">
+              <h4 class="footer-heading">ГОДИНИ РОБОТИ</h4>
+              <p class="footer-text">ПН-НД: 9:00 — 23:00</p>
+            </div>
+
+            <div class="footer-block">
+              <h4 class="footer-heading">НАВІГАЦІЯ</h4>
+              <ul class="footer-nav-list">
+                <li><a href="index.html#concept">Про нас</a></li>
+                <li><a href="https://menu.ps.me/iJKciozf0hg" target="_blank" rel="noopener noreferrer">Меню</a></li>
+                <li><a href="events.html">Події</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 3: Social Media -->
+          <div class="footer-col footer-col-social">
+            <div class="footer-block">
+              <h4 class="footer-heading">СОЦІАЛЬНІ МЕРЕЖІ</h4>
+              <ul class="footer-social-list">
+                <li>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 4: Round Badge Logo -->
+          <div class="footer-col footer-col-badge">
+            <div class="footer-round-badge">
+              <img src="Assets/Images/Footer/Logo-white.png" alt="Ратуша білий логотип" class="footer-badge-logo">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">© 2026 ArtRestoratsiia Ratusha. Усі права захищені.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= LIGHTBOX POPUP MODAL ================= -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-dialog">
+      <button class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Закрити">✕</button>
+      <div class="lightbox-image-container">
+        <img src="" alt="" class="lightbox-active-img" id="lightbox-img">
+      </div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- ================= SCRIPTS ================= -->
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
