@@ -1567,18 +1567,44 @@ h1, h2, h3, h4, h5, h6 {
 .event-detail-meta {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.event-detail-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-olive);
+  color: var(--color-accent);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 14px rgba(70, 70, 42, 0.15);
+}
+
+.event-detail-date svg {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.event-detail-author {
   font-family: var(--font-sans);
   font-size: 12px;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   font-weight: 600;
-  color: #888888;
+  color: #777777;
   text-transform: uppercase;
-  margin-bottom: 16px;
 }
 
 .meta-dot {
-  color: var(--color-accent);
+  color: #CCCCCC;
 }
 
 .event-detail-title {
