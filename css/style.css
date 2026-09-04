@@ -1634,13 +1634,53 @@ h1, h2, h3, h4, h5, h6 {
 
 .event-detail-actions {
   display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  margin-top: 10px;
 }
 
-.btn-event-contact {
-  display: inline-block;
+/* Highlighted Booking Text Box */
+.event-booking-highlight-box {
+  background-color: rgba(70, 70, 42, 0.05);
+  border: 1px solid rgba(70, 70, 42, 0.15);
+  border-left: 4px solid var(--color-olive);
+  border-radius: 6px;
+  padding: 18px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 480px;
+}
+
+.booking-box-label {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  color: #666666;
+  text-transform: uppercase;
+}
+
+.booking-box-phone {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 700;
+  color: #111111;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.booking-box-phone:hover {
+  color: var(--color-olive);
+}
+
+/* Prominent Instagram Button */
+.btn-event-instagram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   padding: 16px 36px;
   background-color: #141414;
   color: var(--color-accent);
@@ -1650,34 +1690,18 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   border: 1.5px solid #141414;
+  border-radius: 4px;
+  max-width: 320px;
   transition: all 0.35s ease;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.btn-event-contact:hover {
-  background-color: transparent;
-  color: #141414;
-  transform: translateY(-2px);
-}
-
-.btn-event-instagram {
-  display: inline-block;
-  padding: 16px 36px;
-  background-color: transparent;
-  color: #141414;
-  font-family: var(--font-sans);
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  border: 1.5px solid #141414;
-  transition: all 0.35s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .btn-event-instagram:hover {
-  background-color: #141414;
-  color: var(--color-white);
+  background-color: var(--color-accent);
+  color: #141414;
+  border-color: var(--color-accent);
   transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
 }
 
 .events-section {
