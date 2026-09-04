@@ -514,15 +514,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let clickCount = 0;
     const additionalBatches = [
       [
-        { day: '17', month: 'ТРА 2026', title: 'Вишукані вечори з живою музикою', desc: 'Жива музика, що створює настрій кожного вечора', img: 'Assets/Images/Events/Event-1.png' },
-        { day: '10', month: 'ТРА 2026', title: 'Музичний вечір', desc: 'Музичний вечір в АртРесторації Ратуша - 10 липня | 18:00', img: 'Assets/Images/Events/Event-2.png' },
-        { day: '03', month: 'ТРА 2026', title: 'Пінна вечірка', desc: 'ПІННА ВЕЧІРКА в АртРесторації Ратуша — море піни, веселощів та яскравих емоцій для дітей!', img: 'Assets/Images/Events/Event-3.png' },
-        { day: '26', month: 'КВІ 2026', title: 'Вишукані вечори з живою музикою', desc: 'Жива музика, що створює настрій кожного вечора', img: 'Assets/Images/Events/Event-1.png' },
-        { day: '19', month: 'КВІ 2026', title: 'Музичний вечір', desc: 'Музичний вечір в АртРесторації Ратуша - 10 липня | 18:00', img: 'Assets/Images/Events/Event-2.png' },
-        { day: '12', month: 'КВІ 2026', title: 'Пінна вечірка', desc: 'ПІННА ВЕЧІРКА в АртРесторації Ратуша — море піни, веселощів та яскравих емоцій для дітей!', img: 'Assets/Images/Events/Event-3.png' },
-        { day: '05', month: 'КВІ 2026', title: 'Вишукані вечори з живою музикою', desc: 'Жива музика, що створює настрій кожного вечора', img: 'Assets/Images/Events/Event-1.png' },
-        { day: '29', month: 'БЕР 2026', title: 'Музичний вечір', desc: 'Музичний вечір в АртРесторації Ратуша - 10 липня | 18:00', img: 'Assets/Images/Events/Event-2.png' },
-        { day: '22', month: 'БЕР 2026', title: 'Пінна вечірка', desc: 'ПІННА ВЕЧІРКА в АртРесторації Ратуша — море піни, веселощів та яскравих емоцій для дітей!', img: 'Assets/Images/Events/Event-3.png' }
+        { day: '17', month: 'ТРА 2026', title: 'Вишукані вечори з живою музикою', desc: 'Жива музика, що створює настрій кожного вечора', img: 'Assets/Images/Events/Event-1.png', link: 'event-1.html' },
+        { day: '10', month: 'ТРА 2026', title: 'Музичний вечір', desc: 'Музичний вечір в АртРесторації Ратуша - 10 липня | 18:00', img: 'Assets/Images/Events/Event-2.png', link: 'event-2.html' },
+        { day: '03', month: 'ТРА 2026', title: 'Пінна вечірка', desc: 'ПІННА ВЕЧІРКА в АртРесторації Ратуша — море піни, веселощів та яскравих емоцій для дітей!', img: 'Assets/Images/Events/Event-3.png', link: 'event-3.html' },
+        { day: '26', month: 'КВІ 2026', title: 'Вишукані вечори з живою музикою', desc: 'Жива музика, що створює настрій кожного вечора', img: 'Assets/Images/Events/Event-1.png', link: 'event-1.html' },
+        { day: '19', month: 'КВІ 2026', title: 'Музичний вечір', desc: 'Музичний вечір в АртРесторації Ратуша - 10 липня | 18:00', img: 'Assets/Images/Events/Event-2.png', link: 'event-2.html' },
+        { day: '12', month: 'КВІ 2026', title: 'Пінна вечірка', desc: 'ПІННА ВЕЧІРКА в АртРесторації Ратуша — море піни, веселощів та яскравих емоцій для дітей!', img: 'Assets/Images/Events/Event-3.png', link: 'event-3.html' },
+        { day: '05', month: 'КВІ 2026', title: 'Вишукані вечори з живою музикою', desc: 'Жива музика, що створює настрій кожного вечора', img: 'Assets/Images/Events/Event-1.png', link: 'event-1.html' },
+        { day: '29', month: 'БЕР 2026', title: 'Музичний вечір', desc: 'Музичний вечір в АртРесторації Ратуша - 10 липня | 18:00', img: 'Assets/Images/Events/Event-2.png', link: 'event-2.html' },
+        { day: '22', month: 'БЕР 2026', title: 'Пінна вечірка', desc: 'ПІННА ВЕЧІРКА в АртРесторації Ратуша — море піни, веселощів та яскравих емоцій для дітей!', img: 'Assets/Images/Events/Event-3.png', link: 'event-3.html' }
       ]
     ];
 
@@ -541,11 +541,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="event-month">${item.month}</span>
               </div>
             </div>
-            <div class="event-arch-img-frame">
+            <a href="${item.link}" class="event-arch-img-frame">
               <img src="${item.img}" alt="${item.title}" class="event-img" loading="lazy">
-            </div>
+            </a>
             <div class="event-card-content">
-              <h3 class="event-title">${item.title}</h3>
+              <h3 class="event-title"><a href="${item.link}" class="event-title-link">${item.title}</a></h3>
               <p class="event-description">${item.desc}</p>
               <span class="event-author">АВТОР: АДМІНІСТРАТОР</span>
             </div>
