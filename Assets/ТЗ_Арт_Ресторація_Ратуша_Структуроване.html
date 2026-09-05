@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Технічне Завдання — Арт-ресторація «Ратуша»</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Urbanist:wght@400;500;600;700&display=swap');
+    
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+    
+    body {
+      font-family: 'Urbanist', sans-serif;
+      color: #141414;
+      line-height: 1.6;
+      background-color: #FBF9F3;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .doc-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      padding: 60px 70px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      border-radius: 8px;
+    }
+
+    .header-badge {
+      display: inline-block;
+      background-color: #46462A;
+      color: #D4AF37;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 38px;
+      line-height: 1.15;
+      color: #141414;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #666666;
+      margin-bottom: 40px;
+      border-bottom: 2px solid #D4AF37;
+      padding-bottom: 20px;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      color: #46462A;
+      margin-top: 36px;
+      margin-bottom: 16px;
+      border-left: 4px solid #D4AF37;
+      padding-left: 12px;
+    }
+
+    h3 {
+      font-size: 18px;
+      color: #141414;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+
+    p, li {
+      font-size: 15px;
+      color: #333333;
+    }
+
+    ul, ol {
+      padding-left: 24px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .callout {
+      background-color: #FBF9F3;
+      border: 1px solid rgba(70,70,42,0.15);
+      border-left: 4px solid #46462A;
+      padding: 18px 22px;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+
+    .tech-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .tech-card {
+      background: #FBF9F3;
+      padding: 16px 20px;
+      border-radius: 6px;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .tech-title {
+      font-weight: 700;
+      font-size: 14px;
+      color: #46462A;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 6px;
+    }
+
+    code {
+      background: #EFECE6;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+    .footer-note {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #EEEEEE;
+      font-size: 13px;
+      color: #888888;
+      text-align: center;
+    }
+
+    @media print {
+      body {
+        background-color: #FFFFFF;
+        padding: 0;
+      }
+      .doc-container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="doc-container">
+  <span class="header-badge">ОФІЦІЙНИЙ ДОКУМЕНТ</span>
+  <h1>Технічне Завдання (ТЗ)</h1>
+  <div class="subtitle">Розробка вебсайту Арт-ресторації «Ратуша» (м. Кам'янець-Подільський)</div>
+
+  <h2>1. Загальна інформація та вимоги</h2>
+  <div class="callout">
+    <strong>Проєкт:</strong> Офіційний сайт Арт-ресторації «Ратуша»<br>
+    <strong>Локація:</strong> м. Кам'янець-Подільський, площа Польський ринок, 1 (будівля Польського Магістрату).<br>
+    <strong>Концепція:</strong> Преміальний вебсайт з ефектом занурення в історію, плавними анімаціями та мобільною адаптивністю.
+  </div>
+
+  <ul>
+    <li><strong>Багатомовність:</strong> Базова версія — українська (`UK`). Передбачити технічну можливість швидкого підключення англійської (`EN`) та польської (`PL`) мов.</li>
+    <li><strong>Модульність (CMS):</strong> Можливість увімкнення, вимкнення та зміни порядку секцій на кожній сторінці через адмін-панель.</li>
+  </ul>
+
+  <h2>2. Головна сторінка (`index.html` / `index-video.html`)</h2>
+  
+  <h3>2.1. Варіанти Hero-секції</h3>
+  <ul>
+    <li><strong>Варіант 1 (Головна з аркою):</strong> 3 арочні елементи. Ліворуч — години роботи, праворуч — адреса й телефон, по центру — відео під склепінням. При скролі вниз арка розгортається на весь екран.</li>
+    <li><strong>Варіант 2 (Головна відео):** Повноекранне фонове відео грає одразу на весь екран.</li>
+    <li><strong>Варіант 3 (Головна фото):** Повноекранне фонове зображення.</li>
+    <li><strong>Оверлей:</strong> Затемнюючий градієнт для читабельності тексту.</li>
+    <li><strong>Навігація:</strong> Анімований елемент <code>ГОРТАЙТЕ</code> зі стрілкою внизу.</li>
+  </ul>
+
+  <h3>2.2. Секція «Про нас» (`#concept`)</h3>
+  <p>Анімований заголовок та каскадна анімація 3-х фотографій праворуч при скролі. Кнопка «Більше про нас» веде на <code>about.html</code>.</p>
+
+  <h3>2.3. Секція «Замовити банкет» (`#banket`)</h3>
+  <p>Арочний слайдер фотографій залів з автоперекруткою або стрілками. Синхронна зміна фото, заголовка та короткого опису. Інфо-блок замовлення з телефоном +380 (97) 886 22 82.</p>
+
+  <h3>2.4. Секція «Меню»</h3>
+  <p>Розбиття на підсекції (Страви / Коктейлі). Анімація при наведенні курсора на страву та <strong>Модальне вікно (Popup)</strong> зі збільшеним фото при натисканні.</p>
+
+  <h3>2.5. Секція «Наші події» (`#events`)</h3>
+  <p>Відображення 3-х актуальних подій з датою, арочним фото, описом та автором. Відцентрована кнопка <strong>«ВСІ ПОДІЇ»</strong> для переходу на <code>events.html</code>.</p>
+
+  <h2>3. Сторінка «Про арт-ресторацію» (`about.html`)</h2>
+  <div class="callout">
+    Модульний конструктор секцій:
+    <ul>
+      <li>Вибір форми рамок: арка або квадрат.</li>
+      <li>Вибір розташування тексту: ліворуч або праворуч.</li>
+      <li>Зміна колірної гами фону (`background-color`).</li>
+      <li>Виділені блоки дій: «Переглянути меню» та «Забронювати столик по телефону: +380 (97) 886 22 82».</li>
+    </ul>
+  </div>
+
+  <h2>4. Сторінка подій (`events.html`) та окремої події (`event-*.html`)</h2>
+  <ul>
+    <li><strong>events.html:</strong> Відображення 6 подій + кнопка «Показати більше» для підвантаження наступних.</li>
+    <li><strong>event-*.html:</strong> Кнопка «Назад до усіх подій», двоколонковий макет (50/50), оливково-золотий бейдж дати й часу, автор, форматований текст з Instagram, виділений блок броні по телефону та кнопка Instagram.</li>
+  </ul>
+
+  <h2>5. Футер (Footer)</h2>
+  <p>Єдиний стандартизований футер із анімованим арочним фото (масштабується при скролі), адресою, телефоном, годинами роботи, навігацією та посиланням на Instagram.</p>
+
+  <h2>6. Дизайн-система та стек</h2>
+  <div class="tech-grid">
+    <div class="tech-card">
+      <div class="tech-title">Шрифти</div>
+      Cormorant Garamond (серіф)<br>Urbanist (гротеск)
+    </div>
+    <div class="tech-card">
+      <div class="tech-title">Палітра</div>
+      Олива (#46462A), Золото (#D4AF37), Крем (#FBF9F3), Графіт (#141414)
+    </div>
+    <div class="tech-card">
+      <div class="tech-title">Анімації</div>
+      Lenis Smooth Scroll, GSAP, ScrollTrigger
+    </div>
+    <div class="tech-card">
+      <div class="tech-title">Верстка</div>
+      HTML5, CSS3 Variables, ES6+ JS
+    </div>
+  </div>
+
+  <div class="footer-note">
+    Сформовано автоматично для проекту ArtRestoratsiia Ratusha • 2026
+  </div>
+</div>
+
+</body>
+</html>

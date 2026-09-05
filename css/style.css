@@ -1677,6 +1677,20 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   gap: 6px;
   max-width: 480px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.event-booking-highlight-box:hover {
+  background-color: rgba(70, 70, 42, 0.12);
+  border-color: rgba(70, 70, 42, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(70, 70, 42, 0.12);
+}
+
+.event-booking-highlight-box:active {
+  transform: translateY(0);
 }
 
 .booking-box-label {
@@ -1684,8 +1698,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   letter-spacing: 0.16em;
   font-weight: 600;
-  color: #666666;
+  color: #555555;
   text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.event-booking-highlight-box:hover .booking-box-label {
+  color: var(--color-olive);
 }
 
 .booking-box-phone {
@@ -1697,7 +1716,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: color 0.3s ease;
 }
 
-.booking-box-phone:hover {
+.event-booking-highlight-box:hover .booking-box-phone {
   color: var(--color-olive);
 }
 
